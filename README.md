@@ -1,7 +1,7 @@
 # Former
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/yourusername/former.svg)](https://pkg.go.dev/github.com/yourusername/former)
-[![Go Report Card](https://goreportcard.com/badge/github.com/yourusername/former)](https://goreportcard.com/report/github.com/yourusername/former)
+[![Go Reference](https://pkg.go.dev/badge/github.com/omareloui/former.svg)](https://pkg.go.dev/github.com/omareloui/former)
+[![Go Report Card](https://goreportcard.com/badge/github.com/omareloui/former)](https://goreportcard.com/report/github.com/omareloui/former)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Former is a Go library for populating structs from HTTP form data using struct
