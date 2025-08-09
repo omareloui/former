@@ -68,13 +68,11 @@
 //
 // - Fields with tag `formfield:"-"` are skipped
 // - Checkbox values "on", "1", and "true" are treated as true for bool fields
-// - Missing fields are logged but don't cause errors
 // - File uploads can be retrieved using GetFile function
 //
 // # Error Handling
 //
 // Former follows these error handling principles:
-// - Missing fields are logged but processing continues
 // - Type conversion errors are returned immediately
 // - Invalid JSON in struct fields returns an error
 // - The target must be a pointer to a struct
@@ -217,9 +215,6 @@ func populateStruct(structValue reflect.Value, structType reflect.Type, r *http.
 				values = getFormValues(r, formFieldName)
 			}
 			if len(values) == 0 {
-				if prefix == "" {
-					log.Printf("Field not found in request: %s (formfield: %s)", field.Name, formFieldName)
-				}
 				continue
 			}
 		}

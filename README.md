@@ -274,7 +274,6 @@ func registerHandler(w http.ResponseWriter, r *http.Request) {
 
 Former follows these principles:
 
-- **Missing fields**: Logged but don't cause errors
 - **Type conversion errors**: Returned immediately
 - **Invalid JSON**: Returns parsing error
 - **Invalid target**: Must be a pointer to a struct
